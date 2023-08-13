@@ -1,0 +1,576 @@
+*{
+    padding: 0%;
+    margin: 0%; 
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+
+}
+body{
+    width: 100%;
+}
+
+/* Header - Navigation Bar */
+
+.nav{
+    /* width: 100%; */
+padding: 20px 100px;    
+display: flex;
+justify-content: space-between;
+box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 99999;
+background-color: white;
+height: 45px;
+}
+.nav .toggle{
+    display: none;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width : 750px){
+    .nav ul{
+        display: none;
+    }
+    .nav .toggle{
+        display: block;
+
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 30px;
+        
+    }
+    .nav .toggle{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width : 950px){
+    .nav ul{
+        display: none;
+
+    }
+    .nav .toggle{
+        display: block;
+        font-size: 30px;
+    }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+        }
+
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight:bold;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.nav .inup{
+    color: red;
+}
+.nav ul li a:hover{
+color: rgb(150, 203, 69);
+}
+.nav .logo h1 span{
+    color: rgb(150, 203, 69);
+}
+.nav ul {
+    gap: 25px;
+}
+
+/* End Of Navigation Bar */
+
+/* Start Of Home Content */
+.home{
+    margin-top: 86px;
+    width: 100%;
+    height: 108vh;
+
+background-image: url(../img/BG-MAIN.png) ;
+background-position: bottom;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+.home .homecontent{
+    text-align: center;
+    flex-direction: column;
+
+}
+.home .homecontent h1{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: rgb(60, 192, 60);
+}
+@media (max-width : 750px){
+    .home .homecontent h1{
+        font-size: 35px;
+        padding-top: 150px;
+    }
+    .home .homecontent h2{
+        font-size: 20px;
+    }
+
+}
+.home .homecontent h2{
+    padding-bottom: 30px;
+}
+.home img{
+    max-width: 95%;
+}
+.home .getstarted{
+    padding-top: 15px;
+}
+.home button{
+    border: 2px solid orange;
+    border-radius: 25px;
+    width: 150px ;
+    height: 47px;
+    color: orange;
+    font-size: 16px;
+    transition: 0.5s;
+    background-color: white;
+    cursor: pointer;
+}
+.home button:hover{
+    background-color: orange;
+    color: white;
+}
+.home .getapp a{
+    text-decoration: none;
+   padding-left: 30px;
+}
+.home .getapp a i{
+    font-size: 20px;
+}
+.home .getapp{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+/* End Of Home */
+
+/* Start Of About */
+
+.about{
+    height: 100vh;
+}
+.about .aboutcontent>h1{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 40px;
+    padding-bottom: 90px;
+}
+.about .aboutcontent .cards1{
+    padding: 0px 90px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about .aboutcontent .cards1 .cloudcard{
+    width: 45%;
+    height: 270px;
+    background-color: white;
+    text-align: center;
+    transition: 0.7s;
+}
+
+
+@media (max-width : 750px){
+    .about .aboutcontent>h1 {
+        padding: 0px;
+
+    }
+    .about .aboutcontent .cards1{
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .about .aboutcontent .cards1 .cloudcard{ 
+        padding: 0px;
+        width: 100%;
+
+    }
+
+    }
+
+
+.about .aboutcontent .cards1 .cloudcard:hover{
+    /* h,v,b,s,c */
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+
+.about .aboutcontent .cards1 .cloudcard img{
+    width: 50px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+}
+.about .aboutcontent .cards1 .cloudcard>h1{
+    
+    padding-bottom: 40px;
+}
+.about .aboutcontent .cards1 .mooncard{
+    width: 45%;
+    height: 270px;
+    background-color:white;
+    text-align: center;
+    transition: 0.7s
+}
+.about .aboutcontent .cards1 .mooncard:hover{
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+
+.about .aboutcontent .cards1 .mooncard img{
+    width: 50px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+}
+
+.about .aboutcontent .cards1 .mooncard>h1{
+    
+    padding-bottom: 40px;
+}
+
+@media (max-width : 750px) {
+    .about .aboutcontent .cards1 .mooncard{ 
+        padding: 0px;
+        width: 100%; 
+}
+.home{
+    height: 90vh;
+}
+.about{
+    height: 85vh;
+}
+.about .aboutcontent .cards1 .mooncard>p{
+    
+    padding:0px 15px;
+}
+.about .aboutcontent .cards1 .cloudcard>p{
+    
+    padding:0px 15px;
+}
+}
+
+/* End Of Features */
+
+.features{
+    width: 100%;
+    height: 100vh;
+}
+.features .featurescontent .featuresmaintxt{
+    text-align: center;
+}
+.features .featurescontent .featuresmaintxt>h1{
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+.features .featurescontent .featuresmaintxt>h5{
+   font-size: 20px; 
+}
+
+.features .featurescontent .cards2 .minicards1 .cardd{
+    width: 450px;
+    background-color:white;
+    height: 200px;
+    transition: 0.7s;
+}
+.features .featurescontent .cards2 .minicards1 .cardd:hover{
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+
+.features .featurescontent .cards2 .minicards1{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+
+.features .featurescontent .cards2 .minicards1 .cardd img{
+    width: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+@media(max-width : 750px){
+    .features .featurescontent .cards2 .minicards1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    .features .featurescontent .cards2 .minicards2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 5px; 
+    }
+    .features{
+        height: 170vh;
+    }
+
+}
+
+/* End Of MiniCards1 */
+
+.features .featurescontent .cards2 .minicards2{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 70px;
+}
+
+.features .featurescontent .cards2 .minicards2 .cardd2{
+    width: 550px;
+    background-color:white;
+    height: 200px;
+    transition: 0.7s;
+}
+.features .featurescontent .cards2 .minicards2 .cardd2:hover{
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+.features .featurescontent .cards2 .minicards2 .cardd2 img{
+    width: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* End Of Features */
+
+/* Start Of Features */
+
+.timeline{
+    width: 100%;
+    height: 100vh;
+}
+.timeline .timelinetxt{
+    text-align: center;
+}
+.timeline .timelinetxt>h1{
+    font-size: 50px;
+}
+.timeline .timelinetxt>h5{
+   padding-bottom: 20px;
+}
+.timeline .minicards3{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.timeline .minicards3 .cardd3{
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    transition: 0.7s;
+
+}
+.timeline .minicards3 .cardd3:hover{
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+
+@media(max-width : 750px){
+    .timeline .minicards3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .timeline .minicards4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .timeline{
+        height: 170vh;
+    }
+}
+
+.timeline .minicards4{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.timeline .minicards4 .cardd3{
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    transition: 0.7s;
+
+}
+.timeline .minicards4 .cardd3:hover{
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+
+/* End Of Timeline */
+
+/* Start Of Contact */
+
+.contact{
+
+    height: 100vh;
+
+}
+
+.contact>h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.contact .contactinfo{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.contact .contactinfo .inp{
+    width: 400px;
+    padding: 7px;
+    border: 2px solid orange;
+    border-radius: 7px;
+}
+.contact .contactinfo .inpp{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 10px ;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.contact .contactinfo .inpp:hover{
+    background-color: rgb(253, 199, 100)
+}
+.contact .contactinfo .inp:hover{
+    border: 2px solid blue;
+}
+.contact .contactinfo .formm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.contact .contactinfo .formm input{
+    width: 400px;
+    padding: 5px 10px;
+}
+
+
+@media(max-width : 750px){
+    .contact .contactinfo .formm input{
+        width: 200px;
+        padding: 5px 10px;
+    }
+    .contact .contactinfo .formm{
+        width: 80%;
+    }
+    .contact .contactinfo .formm textarea{
+        width: 200px;
+    }
+    .contact{
+        height: 150vh;
+    }
+
+}
+/* end of contact */
+
+/* start of footer */
+.space .last {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+.footer {
+    text-align: center;
+}
+
+/* end of footer */
+
+
+/* Sign IN page */
+
+.signin{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+}
+
+
+.signin .signinn{
+    width: 900px;
+    height: 450px;
+    /* background-color: red; */
+    position: absolute;
+    top: 130px;
+    left:300px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+.signin .signinn .login{
+    background-color: rgb(227, 218, 218);
+    border-radius: 15px 15px 0px 0px ;
+}
+.signin .signinn input{
+    border-radius: 10px ;
+    width: 300px;
+    height: 40px;
+    
+}
+.signin .signinn .logintxt{
+    padding-top:50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+}
+.signin .signinn .chek{
+    position: relative;
+    right: 100px;
+    top: 35px;
+}
+.signin .signinn button{
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: orange;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border: 0px;
+    transition: 0.7s;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+.signin .signinn button:hover{
+    background-color: rgb(75, 75, 205);
+}
+
+
+
+
+
+
