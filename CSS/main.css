@@ -111,8 +111,8 @@ background-attachment: fixed;
 
 }
 .home .homecontent h1{
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding-top: 25px;
+    /* padding-bottom: 0px; */
     font-size: 50px;
     color: rgb(60, 192, 60);
 }
@@ -127,13 +127,19 @@ background-attachment: fixed;
 
 }
 .home .homecontent h2{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .home img{
     max-width: 95%;
 }
 .home .getstarted{
     padding-top: 15px;
+}
+@media(max-width : 950px){
+    .home .homecontent h1{
+        font-size: 35px;
+        padding-top: 100px;
+    }
 }
 .home button{
     border: 2px solid orange;
@@ -248,10 +254,15 @@ background-attachment: fixed;
     padding-bottom: 40px;
 }
 
+
 @media (max-width : 750px) {
     .about .aboutcontent .cards1 .mooncard{ 
-        padding: 0px;
-        width: 100%; 
+        /* padding: 0px; */
+        width: 90%; 
+}
+
+.about .aboutcontent .cards1{ 
+gap: 20px 0px;
 }
 .home{
     height: 90vh;
@@ -259,14 +270,57 @@ background-attachment: fixed;
 .about{
     height: 85vh;
 }
+
 .about .aboutcontent .cards1 .mooncard>p{
     
-    padding:0px 15px;
+    padding-bottom: 29px;
 }
+.about .aboutcontent .cards1 .mooncard>h1{
+    
+    padding-bottom: 20px;
+}
+
 .about .aboutcontent .cards1 .cloudcard>p{
     
-    padding:0px 15px;
+    padding-bottom: 29px;
 }
+.about .aboutcontent .cards1 .cloudcard>h1{
+    
+    padding-bottom: 20px;
+}
+}
+@media(max-width : 950px){
+
+    .about{
+        height: 105vh;
+    }
+
+    .about .aboutcontent .cards1 .cloudcard{
+        width: 90%;
+    } 
+    .about .aboutcontent .cards1 .cloudcard p{
+     margin-bottom: 10px;
+    } 
+    .about .aboutcontent .cards1 {
+        width: 100%;
+    } 
+    .about .aboutcontent .cards1 .mooncard>p{
+    
+        padding-bottom: 29px;
+    }
+    .about .aboutcontent .cards1 .mooncard>h1{
+        
+        padding-bottom: 20px;
+    }
+    
+    .about .aboutcontent .cards1 .cloudcard>p{
+        
+        padding-bottom: 29px;
+    }
+    .about .aboutcontent .cards1 .cloudcard>h1{
+        
+        padding-bottom: 20px;
+    }
 }
 
 /* End Of Features */
@@ -281,6 +335,8 @@ background-attachment: fixed;
 .features .featurescontent .featuresmaintxt>h1{
     font-size: 50px;
     padding-bottom: 25px;
+    /* padding-top: 70px; */
+
 }
 .features .featurescontent .featuresmaintxt>h5{
    font-size: 20px; 
@@ -296,6 +352,7 @@ background-attachment: fixed;
     box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
 }
 
+
 .features .featurescontent .cards2 .minicards1{
     text-align: center;
     display: flex;
@@ -309,6 +366,68 @@ background-attachment: fixed;
     padding-bottom: 20px;
 }
 
+
+
+
+@media (max-width : 950px){
+
+    .features .featurescontent .featuresmaintxt>h1{
+        font-size: 45px;
+
+    }
+    .features .featurescontent .cards2 .minicards1 .cardd{
+        width: 80%;
+    }
+    .features .featurescontent .cards2 .minicards1{
+        gap: 13px;
+    }
+    .features .featurescontent .cards2 .minicards1 .cardd h5{
+
+        font-size: 18px;
+    }
+    .features .featurescontent .cards2 .minicards1 .cardd img{
+        width: 80px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+}
+@media (max-width : 750px){
+    .features{
+        height: 110vh;
+    }
+    .features .featurescontent .featuresmaintxt>h1{
+        font-size: 40px;
+
+    }
+}
+
+
+/* End Of MiniCards1 */
+
+.features .featurescontent .cards2 .minicards2{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    /* position: relative;
+    top: 70px; */
+    padding-top: 20px;
+}
+
+.features .featurescontent .cards2 .minicards2 .cardd2{
+    width: 550px;
+    background-color:white;
+    height: 200px;
+    transition: 0.7s;
+}
+.features .featurescontent .cards2 .minicards2 .cardd2:hover{
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+.features .featurescontent .cards2 .minicards2 .cardd2 img{
+    width: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 @media(max-width : 750px){
     .features .featurescontent .cards2 .minicards1{
         display: flex;
@@ -326,30 +445,23 @@ background-attachment: fixed;
     }
 
 }
+@media (max-width : 950px){
+    .features .featurescontent .cards2 .minicards2 .cardd2{
+        width: 80%;
+    }
+    .features .featurescontent .cards2 .minicards2{
+        gap: 13px;
+    }
+    .features .featurescontent .cards2 .minicards2 .cardd2 h5{
 
-/* End Of MiniCards1 */
+        font-size: 18px;
+    }
+    .features .featurescontent .cards2 .minicards .cardd2 img{
+        width: 80px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
 
-.features .featurescontent .cards2 .minicards2{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    top: 70px;
-}
-
-.features .featurescontent .cards2 .minicards2 .cardd2{
-    width: 550px;
-    background-color:white;
-    height: 200px;
-    transition: 0.7s;
-}
-.features .featurescontent .cards2 .minicards2 .cardd2:hover{
-    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
-}
-.features .featurescontent .cards2 .minicards2 .cardd2 img{
-    width: 60px;
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* End Of Features */
@@ -387,19 +499,7 @@ background-attachment: fixed;
     box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
 }
 
-@media(max-width : 750px){
-    .timeline .minicards3{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .timeline .minicards4{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .timeline{
-        height: 170vh;
-    }
-}
+
 
 .timeline .minicards4{
     display: flex;
@@ -417,6 +517,33 @@ background-attachment: fixed;
 }
 .timeline .minicards4 .cardd3:hover{
     box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.21);
+}
+@media(max-width : 750px){
+    .timeline{
+        height: 180vh;
+    }
+    .timeline .minicards3{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 0px;
+    }
+    .timeline .minicards3 .cardd3{
+        width: 80%;
+    }
+    .timeline .minicards4 .cardd3{
+        width: 80%;
+    }
+    .timeline .minicards4{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 0px;
+    }
+    @media(max-width : 950px){
+        .timeline{
+            height: 200vh;
+        }
+    }
+
 }
 
 /* End Of Timeline */
@@ -442,6 +569,16 @@ background-attachment: fixed;
     flex-wrap: wrap;
     gap: 100px;
 }
+.contact .contactinfo .data .minidata{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 20px;
+}
+
+.contact .contactinfo .data .minidata i{
+padding-right: 22px;
+
+}
 
 .contact .contactinfo .inp{
     width: 400px;
@@ -450,8 +587,8 @@ background-attachment: fixed;
     border-radius: 7px;
 }
 .contact .contactinfo .inpp{
-    width: 150px;
-    height: 40px;
+    /* width: px; */
+    /* height: 40px; */
     color: white;
     background-color: orange;
     border: 2px solid orange;
@@ -480,14 +617,14 @@ background-attachment: fixed;
 
 @media(max-width : 750px){
     .contact .contactinfo .formm input{
-        width: 200px;
+        width: 300px;
         padding: 5px 10px;
     }
     .contact .contactinfo .formm{
         width: 80%;
     }
     .contact .contactinfo .formm textarea{
-        width: 200px;
+        width: 300px;
     }
     .contact{
         height: 150vh;
